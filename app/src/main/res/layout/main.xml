@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/image_grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/violet"
+        android:scaleType="fitXY"
+       />
+
+    <ImageView
+        android:id="@+id/image_orange"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/dark_blue"
+        android:alpha="0"
+        android:scaleType="fitXY"
+        />
+
+    <Button
+        android:id="@+id/add_page_button"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:text="Add Page"/>
+
+
+    <com.chaitanya.www.parallaxsample.ViewPagerParallax
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:layout_weight="1"
+        />
+
+</RelativeLayout>
